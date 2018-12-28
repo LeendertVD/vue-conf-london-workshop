@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`toggles "Show more/ show less" when button is clicked 1`] = `
+<div>
+  <!---->
+    
+  <button>
+    
+    Show less
+  
+  </button>
+</div>
+`;

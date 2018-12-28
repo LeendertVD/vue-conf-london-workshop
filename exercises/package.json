@@ -1,0 +1,57 @@
+{
+  "private": true,
+  "license": "MIT",
+  "scripts": {
+    "lint": "eslint '{,!(node_modules)/**/}*.{js,vue}'",
+    "format": "prettier --no-semi --single-quote --write '{,!(node_modules)/**/}*.{js,json,jsx,md,vue}'",
+    "test:filters": "jest --testRegex '1-filters/.*\\.spec\\.js$'",
+    "test:filters:solutions": "jest --testRegex '1-filters/.*\\.solution\\.js$'",
+    "test:components": "jest --projects --testRegex '2-components/.*\\.spec\\.js$'",
+    "test:components:solutions": "jest --testRegex '2-components/.*\\.solution\\.js$'",
+    "test:vue-events": "jest --projects --testRegex '3-vue-events/.*\\.spec\\.js$'",
+    "test:vue-events:solutions": "jest --testRegex '3-vue-events/.*\\.solution\\.js$'",
+    "test:stubbing-components": "jest --testRegex '4-stubbing-components/.*\\.spec\\.js$'",
+    "test:stubbing-components:solutions": "jest --testRegex '4-stubbing-components/.*\\.solution\\.js$'",
+    "test:mocks": "jest --testRegex '5-mocks/.*\\.spec\\.js$'",
+    "test:mocks:solutions": "jest --testRegex '5-mocks/.*\\.solution\\.js$'",
+    "test:async-code": "jest --testRegex '6-async-code/.*\\.spec\\.js$'",
+    "test:async-code:solutions": "jest --testRegex '6-async-code/.*\\.solution\\.js$'",
+    "test:timer-functions": "jest --testRegex '7-timer-functions/.*\\.spec\\.js$'",
+    "test:timer-functions:solutions": "jest --testRegex '7-timer-functions/.*\\.solution\\.js$'",
+    "test:vuex-store": "jest --testRegex '8-vuex-store/.*\\.spec\\.js$'",
+    "test:vuex-store:solutions": "jest --testRegex '8-vuex-store/.*\\.solution\\.js$'",
+    "test:vuex-in-components": "jest --testRegex '9-vuex-in-components/.*\\.spec\\.js$'",
+    "test:vuex-in-components:solutions": "jest --testRegex '9-vuex-in-components/.*\\.solution\\.js$'"
+  },
+  "dependencies": {
+    "@babel/core": "^7.0.1",
+    "@babel/preset-env": "^7.0.0",
+    "@vue/test-utils": "^1.0.0-beta.25",
+    "axios": "^0.18.0",
+    "babel-core": "7.0.0-bridge.0",
+    "babel-jest": "^23.6.0",
+    "eslint": "^5.6.0",
+    "eslint-config-prettier": "^3.0.1",
+    "eslint-config-standard": "^12.0.0",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-node": "^7.0.1",
+    "eslint-plugin-standard": "^4.0.0",
+    "eslint-plugin-vue": "^4.7.1",
+    "flush-promises": "^1.0.0",
+    "jest": "^23.6.0",
+    "vue": "^2.5.17",
+    "vue-jest": "^2.6.0",
+    "vue-template-compiler": "^2.5.17",
+    "vuex": "^3.0.1"
+  },
+  "jest": {
+    "transform": {
+      ".+\\.js$": "babel-jest",
+      ".+\\.vue$": "vue-jest"
+    }
+  },
+  "devDependencies": {
+    "eslint-plugin-promise": "^4.0.1",
+    "prettier": "^1.14.3"
+  }
+}
